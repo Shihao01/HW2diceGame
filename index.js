@@ -1,5 +1,5 @@
 ﻿/**
- * Created by bcuser on 4/4/19.
+ * Created by shizhao on 4/14/19.
  */
 
 
@@ -20,8 +20,8 @@ function buttonClicked() {
 function GetNewBalance(balance) {
     var dice = [];
     RollDice(dice);
-    var dice1txt = "images/dice-" + dice[0] + ".jpg";
-    var dice2txt = "images/dice-" + dice[1] + ".jpg";
+    var dice1txt = "dice-" + dice[0] + ".jpg";
+    var dice2txt = "dice-" + dice[1] + ".jpg";
     document.getElementById("image1").src = dice1txt;
     document.getElementById("image2").src = dice2txt;
     if (dice[0] === dice[1] || dice[0] + dice[1] === 7 || dice[0] + dice[1] === 11) {
